@@ -32,7 +32,6 @@ public class Customer {
         Enumeration<Rental> rentals = _rentals.elements();
         String result = "Rental Record for " + getName() + "\n";
         while (rentals.hasMoreElements()) {
-            if(rentals != null) throw new RuntimeException();
             double thisAmount= 0;
 
             Rental each = (Rental) rentals.nextElement();
